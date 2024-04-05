@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
       <Header />
-      <section className="flex-1 bg-accent flex items-center md:items-start md:pt-40">
+      <section className="flex-1 bg-gradient-to-r from-red-500 via-red-500 to-red-600 flex items-center md:items-start md:pt-40">
         <div ref={ref} className={`flex items-center justify-center flex-col gap-6 md:flex-row-reverse md:container ${inView ? 'animate' : ''}`}>
           <div className="w-full mx-auto">
             <Image

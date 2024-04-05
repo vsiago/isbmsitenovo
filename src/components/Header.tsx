@@ -14,14 +14,9 @@ export default function Header() {
             link: "/"
         },
         {
-            nome: "Biografia do Prefeito",
-            link: "/biografia-prefeito"
+            nome: "Doar",
+            link: "/doar"
         },
-        {
-            nome: "Agenda e Eventos",
-            link: "/agenda-e-eventos"
-        },
-
     ];
 
     useEffect(() => {
@@ -48,9 +43,9 @@ export default function Header() {
     }, [prevScrollPos]);
 
     return (
-        <header className={`${scrolled ? "bg-sky-500 fixed top-0 z-10 h-16 flex w-full translate-y-0 duration-300 ease-in-out bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-90" : "h-24 bg-accent"} `}>
+        <header className={`${scrolled ? "bg-red-500 fixed top-0 z-10 h-16 flex w-full translate-y-0 duration-300 ease-in-out bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-90" : "h-24 bg-gradient-to-r from-red-800/100 via-red-500 to-red-600"} `}>
             <nav className="min-h-full px-6 flex w-full justify-between items-center md:container mx-auto ">
-            <a href="/">
+                <a href="/">
                     <Image
                         src="/rubao-logo-clara.png"
                         width={150}
@@ -87,9 +82,9 @@ export default function Header() {
                         </li>
                     ))}
                 </ul>
-                <ul className="hidden md:flex gap-3">{menuItems.map((item, intex) => (
-                    <li key={item.nome}>
-                        <Link className={`${scrolled ? 'text-slate-700' : ''} h-20 px-2 py-1 text-slate-400 active:text-sky-400`} href={item.link}>{item.nome}</Link>
+                <ul className="hidden md:flex gap-6 items-center justify-center">{menuItems.map((item, intex) => (
+                    <li className={`${item.nome === "Doar" ? 'bg-red-500 p-3 px-6 text-white rounded-full hover:scale-110 cursor-pointer transition-all ease-in-out  hover:shadow-2xl hover:drop-shadow-2xl hover:bg-red-600/40 hover:border-4 hover:border-red-500' : ''}`} key={item.nome}>
+                        <Link className={`${scrolled ? 'text-slate-700' : ''} h-20 px-2 py-1 text-slate-400 hover:text-white  text-xl active:text-red-400 ${item.nome === "Doar" ? 'text-white font-bold' : ''}`} href={item.link}>{item.nome}</Link>
                     </li>
                 ))}</ul>
             </nav>
