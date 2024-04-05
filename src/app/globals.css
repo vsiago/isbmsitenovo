@@ -80,42 +80,58 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(60px); /* Opcional: Pode adicionar uma animação de translação */
+    transform: translateY(60px);
+    /* Opcional: Pode adicionar uma animação de translação */
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 1;
-    transform: translateY(0); /* Opcional: Pode adicionar uma animação de translação */
+    transform: translateY(0);
+    /* Opcional: Pode adicionar uma animação de translação */
     animation-duration: 1s;
   }
 }
 
 .animate {
   opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards; /* Aplica a animação de fade in */
+  animation: fadeIn 1s ease-in-out forwards;
+  /* Aplica a animação de fade in */
 }
 
 .animate-delay {
-  animation-delay: 0.3s; /* Defina o atraso desejado aqui */
+  animation-delay: 0.3s;
+  /* Defina o atraso desejado aqui */
 }
 
 .bg-image-section {
-  background: linear-gradient(
-      rgba(98, 22, 40, 0.5), /* Cor com transparência */
-      rgba(98, 22, 40, 0.5) /* Cor com transparência */
+  background: linear-gradient(rgba(98, 22, 40, 0.5),
+      /* Cor com transparência */
+      rgba(98, 22, 40, 0.5)
+      /* Cor com transparência */
     ),
-    url('/bg-criancas.png'); /* URL da sua imagem de fundo */
-  background-size: cover; /* Para cobrir toda a área da section */
-  background-position: center; /* Para centralizar a imagem */
+    url('/bg-criancas.png');
+  /* URL da sua imagem de fundo */
+  background-size: cover;
+  /* Para cobrir toda a área da section */
+  background-position: center;
+  /* Para centralizar a imagem */
 }
 
 @keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-500%); }
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-500%);
+  }
 }
 
 .animate-marquee {
-  animation: marquee 300s linear infinite; /* Ajuste a velocidade conforme necessário */
+  animation: marquee 300s linear infinite;
+  /* Ajuste a velocidade conforme necessário */
 }
