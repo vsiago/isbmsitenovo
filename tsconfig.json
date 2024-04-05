@@ -33,7 +33,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/Header.tsx"
-  ],
+, "src/app/doar/page.jsx", "src/app/doar/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]
