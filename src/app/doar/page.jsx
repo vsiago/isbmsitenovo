@@ -79,15 +79,15 @@ export default function Doar() {
                       Faça sua doação agora!
                     </p>
                     <Image
-                      width={5} height={5}
+                      width={150} height={150}
                       className="h-full w-full rounded-sm"
                       src="/qr-code-donate.png"
                       alt="Donate"
                     />
                   </div>
                   <div className="flex flex-col items-center gap-2 justify-center mt-3">
-                    <Image width={5} height={5}
-                      src="../../public/img/SVG/icon-pix.svg"
+                    <Image width={20} height={20}
+                      src="/SVG/icon-pix.svg"
                       alt="Algo"
                       className="h-6"
                     />
