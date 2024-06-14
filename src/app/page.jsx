@@ -11,7 +11,7 @@ export default function Home() {
     <main className="relative">
       <Header />
 
-      <section className="h-[85vh] -mb-1 relative  flex items-center justify-center bg-gradient-to-tr from-[#311818] via-[#BE2B4E] via-70% to-[#8A0000]/60">
+      <section className="h-[88vh] -mb-1 relative  flex items-center justify-center bg-gradient-to-tr from-[#311818] via-[#BE2B4E] via-70% to-[#8A0000]/60">
         <div className="background-indian-texture  h-full w-full">
         <div className="container  flex items-center flex-col h-full md:flex-row">
           <div className=" h-[30%] md:h-full md:w-[50%] flex items-end justify-end md:order-2 ">
