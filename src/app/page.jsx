@@ -20,7 +20,7 @@ export default function Home() {
               height={700}
               src="/menina-art-1.png"
               alt="Algo"
-              className="h-full w-full object-contain"
+              className="h-[90%] w-full object-contain"
               objectFit="cover"
             />
           </div>
