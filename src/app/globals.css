@@ -128,8 +128,17 @@ body {
 .custom-shape-divider-bottom-1718321215 svg {
   position: relative;
   display: block;
-  width: calc(127% + 1.3px);
+  width: calc(100% + 2.3px);
   height: 133px;
+}
+
+.custom-shape-divider-bottom-1718321215 svg ~ svg:nth-of-type(2) {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: calc(130% + 1.3px);
+  height: 133px;
+  opacity: 20%;
 }
 
 .custom-shape-divider-bottom-1718321215 .shape-fill {
