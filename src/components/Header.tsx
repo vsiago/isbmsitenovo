@@ -43,7 +43,7 @@ export default function Header() {
     }, [prevScrollPos]);
 
     return (
-        <header className={`${scrolled ? "bg-red-500 fixed top-0 z-10 h-16 flex w-full translate-y-0 duration-300 ease-in-out bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-90" : "h-24 bg-gradient-to-r from-[#140D10]/60 via-[#621628] to-[#621628]/70"} `}>
+        <header className={`${scrolled ? "bg-red-500 fixed top-0 z-10 h-16 flex w-full translate-y-0 duration-300 ease-in-out bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-90" : "h-40 bg-gradient-to-r w-full from-[#140D10]/0 absolute top-0 z-20 left-0 via-[#621628]/0 to-[#621628]/0"} `}>
             <nav className="min-h-full px-6 flex w-full justify-between items-center md:container mx-auto ">
                 <a href="/">
                     <Image

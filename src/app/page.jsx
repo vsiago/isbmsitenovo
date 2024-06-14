@@ -8,31 +8,35 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <>
+    <main className="relative">
       <Header />
-      {/* <Image
-        width={20}
-        height={20}
-        src="bg-criancas.png"
-        alt="Algo"
-        className="h-6"
-      /> */}
-      <section className="h-[70vh] -mb-1 relative bg-gradient-to-tr from-[#140D10] via-[#621628] via-50% to-[#621628]">
-        <div className="flex flex-col h-full">
-          <div className=" h-[30%] flex items-center justify-center">Img</div>
-          <div className=" h-[50%]">
-            <span className="text-center block font-sans font-semibold text-xs tracking-[4px] mb-3 text-[#ff7a99]">
+
+      <section className="h-[85vh] -mb-1 relative  flex items-center justify-center bg-gradient-to-tr from-[#311818] via-[#BE2B4E] via-70% to-[#8A0000]/60">
+        <div className="background-indian-texture  h-full w-full">
+        <div className="container  flex items-center flex-col h-full md:flex-row">
+          <div className=" h-[30%] md:h-full md:w-[50%] flex items-end justify-end md:order-2 ">
+            <Image
+              width={700}
+              height={700}
+              src="/menina-art-1.png"
+              alt="Algo"
+              className="h-full w-full object-contain"
+              objectFit="cover"
+            />
+          </div>
+          <div className=" h-[50%] md:order-1 md:w-[50%]">
+            <span className="text-center block font-sans font-semibold text-xs tracking-[4px] mb-3 text-[#ff7a99] md:text-start md:text-xl">
               BEM-VINDO AO NOSSO
             </span>
-            <h1 className="text-center font-life-savers text-4xl mb-3 text-white font-black md:text-7xl">
+            <h1 className="text-center font-life-savers text-4xl mb-3 text-white font-black md:text-[6rem] md:leading-[90px] md:text-start">
               Instituto Social Bezerra de Menezes
             </h1>
-            <p className="font-lato text-lg text-center mx-12 leading-5 tracking-wide">
-              💃 Transformando vidas através da, cultura e da arte 🎨
+            <p className="font-lato text-lg text-center mx-12 md:mx-0 leading-5 tracking-wide md:text-start md:text-3xl md:pr-32 text-[#D8A0A0]">
+               Transformando vidas através da, cultura e da arte 🎨💃
             </p>
-            <div className="flex gap-x-3 items-center justify-center mt-3">
-              <a className="block text-#E0234E">APOIAR</a>
-              <a className="block">Quem Somos</a>
+            <div className="flex gap-x-3 items-center justify-center mt-3 md:justify-start md:mt-6">
+              <a href="/" className="block text-#E0234E px-6 py-4 bg-red-500 rounded-full text-white font-bold">APOIAR</a>
+              <a href="/" className="block text-white font-bold px-6 py-4 border-2 border-red-500 rounded-full">Quem Somos</a>
             </div>
           </div>
         </div>
@@ -45,9 +49,9 @@ export default function Home() {
           >
             <defs>
               <linearGradient id="gradient" x1="100%" y1="0%" x2="0%" y2="0%">
-                <stop offset="0%" stop-color="#FBE2E2" />
-                <stop offset="50%" stop-color="#F6E5E5" />
-                <stop offset="100%" stop-color="#908686" />
+                <stop offset="0%" stop-color="#F0E0E0" />
+                <stop offset="50%" stop-color="#F0E0E0" />
+                <stop offset="100%" stop-color="#F0E0E0" />
               </linearGradient>
             </defs>
 
@@ -67,10 +71,11 @@ export default function Home() {
             ></path>
           </svg>
         </div>
+        </div>
       </section>
-      <section className="-mt-[2px] h-96 bg-gradient-to-r from-custom-red via-custom-pink to-custom-gray"></section>
-      <section className="-mt-1 h-96 bg-gradient-to-r from-custom-red via-custom-pink to-custom-gray"></section>
+      <section className="-mt-[2px] h-96 bg-[#F0E0E0]"></section>
+      <section className="-mt-1 h-96 bg-gradient-to-r bg-[#F0E0E0]"></section>
       <Footer />
-    </>
+    </main>
   );
 }

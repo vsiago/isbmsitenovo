@@ -135,3 +135,10 @@ body {
 .custom-shape-divider-bottom-1718321215 .shape-fill {
   fill: #ffffff;
 }
+
+.background-indian-texture {
+  background-image: url("/bg-indian-floral.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
