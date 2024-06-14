@@ -35,8 +35,8 @@ export default function Home() {
                Transformando vidas através da, cultura e da arte 🎨💃
             </p>
             <div className="flex gap-x-3 items-center justify-center mt-3 md:justify-start md:mt-6">
-              <a href="/" className="block text-#E0234E px-6 py-4 bg-red-500 rounded-full text-white font-bold">APOIAR</a>
-              <a href="/" className="block text-white font-bold px-6 py-4 border-2 border-red-500 rounded-full">Quem Somos</a>
+              <a href="/" className="block text-#E0234E px-6 py-4 bg-[#E0234E] rounded-full text-white font-bold">APOIAR</a>
+              <a href="/" className="block text-white font-bold px-6 py-4 border-2 border-[#E0234E] rounded-full">Quem Somos</a>
             </div>
           </div>
         </div>

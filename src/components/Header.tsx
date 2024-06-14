@@ -43,7 +43,7 @@ export default function Header() {
     }, [prevScrollPos]);
 
     return (
-        <header className={`${scrolled ? "bg-red-500 fixed top-0 z-10 h-16 flex w-full translate-y-0 duration-300 ease-in-out bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-90" : "h-40 bg-gradient-to-r w-full from-[#140D10]/0 absolute top-0 z-20 left-0 via-[#621628]/0 to-[#621628]/0"} `}>
+        <header className={`${scrolled ? "bg-[#E0234E] fixed top-0 z-10 h-16 flex w-full translate-y-0 duration-300 ease-in-out bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-90" : "h-40 bg-gradient-to-r w-full from-[#140D10]/0 absolute top-0 z-20 left-0 via-[#621628]/0 to-[#621628]/0"} `}>
             <nav className="min-h-full px-6 flex w-full justify-between items-center md:container mx-auto ">
                 <a href="/">
                     <Image
@@ -55,7 +55,7 @@ export default function Header() {
                 </a>
                 <ul
                     onClick={() => setOpen(!open)}
-                    className="md:hidden relative flex h-10 w-10 flex-col items-center justify-center gap-3 cursor-pointer hover:bg-[#e0234e] rounded transition duration-150 ease-in hover:transform hover:scale-105"
+                    className="md:hidden relative flex h-10 w-10 flex-col items-center justify-center gap-3 cursor-pointer hover:bg-[#E0234E] rounded transition duration-150 ease-in hover:transform hover:scale-105"
                 >
                     <li
                         className={`${open ? "transform rotate-45 absolute" : ""} w-7 h-[3px] rounded-[2px] bg-white transition duration-150 ease-in-out`}
@@ -83,7 +83,7 @@ export default function Header() {
                     ))}
                 </ul>
                 <ul className="hidden md:flex gap-6 items-center justify-center">{menuItems.map((item, intex) => (
-                    <li className={`${item.nome === "Doar" ? 'bg-red-500 p-3 px-6 text-white rounded-full hover:scale-110 cursor-pointer transition-all ease-in-out  hover:shadow-2xl hover:drop-shadow-2xl hover:bg-red-600/40 hover:border-4 hover:border-red-500' : ''}`} key={item.nome}>
+                    <li className={`${item.nome === "Doar" ? 'bg-[#E0234E] p-3 px-6 text-white rounded-full hover:scale-110 cursor-pointer transition-all ease-in-out  hover:shadow-2xl hover:drop-shadow-2xl hover:bg-red-600/40 hover:border-4 hover:border-red-500' : ''}`} key={item.nome}>
                         <Link className={`${scrolled ? 'text-text-white' : ''} h-20 px-2 py-1 text-white hover:text-white  text-xl active:text-red-400 ${item.nome === "Doar" ? 'text-white font-bold' : ''}`} href={item.link}>{item.nome}</Link>
                     </li>
                 ))}</ul>
