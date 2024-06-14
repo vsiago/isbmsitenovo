@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: white;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -35,36 +38,6 @@
 
     --radius: 0.5rem;
   }
-
-  .dark {
-    --background: ;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-  }
 }
 
 @layer base {
@@ -75,6 +48,12 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+body {
+  background-color: #621628;
+  color: #ab8d94;
+  font-family: "Lato";
 }
 
 @keyframes fadeIn {
@@ -108,12 +87,12 @@
 }
 
 .bg-image-section {
-  background: linear-gradient(rgba(98, 22, 40, 0.5),
-      /* Cor com transparência */
-      rgba(98, 22, 40, 0.5)
-      /* Cor com transparência */
+  background: linear-gradient(
+      rgba(98, 22, 40, 0.5),
+      /* Cor com transparência */ rgba(98, 22, 40, 0.5)
+        /* Cor com transparência */
     ),
-    url('/bg-criancas.png');
+    url("/bg-criancas.png");
   /* URL da sua imagem de fundo */
   background-size: cover;
   /* Para cobrir toda a área da section */
@@ -134,4 +113,25 @@
 .animate-marquee {
   animation: marquee 300s linear infinite;
   /* Ajuste a velocidade conforme necessário */
+}
+
+.custom-shape-divider-bottom-1718321215 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1718321215 svg {
+  position: relative;
+  display: block;
+  width: calc(127% + 1.3px);
+  height: 133px;
+}
+
+.custom-shape-divider-bottom-1718321215 .shape-fill {
+  fill: #ffffff;
 }

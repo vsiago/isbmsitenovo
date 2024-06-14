@@ -1,18 +1,18 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{jsx,ts,tsx}",
+    "./components/**/*.{jsx,ts,tsx}",
+    "./app/**/*.{jsx,ts,tsx}",
+    "./src/**/*.{jsx,ts,tsx}",
   ],
   prefix: "",
   theme: {
     fontFamily: {
-      sans: ['Inter', 'sans-serif'],
-      display: ['Vibur', 'sans-serif'],
+      sans: ["Inter", "sans-serif"],
+      display: ["Vibur", "sans-serif"],
     },
     container: {
       center: true,
@@ -22,7 +22,18 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Lato", "sans-serif"],
+        display: ["Vibur", "sans-serif"],
+        libre: ["Libre Baskerville", "serif"],
+        "bai-jamjuree": ["Bai Jamjuree", "sans-serif"],
+        "life-savers": ['"Life Savers"', "cursive"],
+        lato: ['"Lato"', "sans-serif"],
+      },
       colors: {
+        "custom-red": "#FBE2E2",
+        "custom-pink": "#F6E5E5",
+        "custom-gray": "#908686",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -78,7 +89,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require('@tailwindcss/line-clamp')],
-} satisfies Config
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/line-clamp")],
+} satisfies Config;
 
-export default config
+export default config;

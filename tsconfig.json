@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -22,9 +18,7 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     }
   },
   "include": [
@@ -32,9 +26,10 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/Header.tsx"
-, "src/app/doar/page.jsx", "src/app/doar/page.jsx"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "src/components/Header.tsx",
+    "src/app/doar/page.jsx",
+    "src/app/doar/page.jsx",
+    "src/app/page.jsx"
+  ],
+  "exclude": ["node_modules"]
 }
