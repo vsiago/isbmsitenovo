@@ -32,7 +32,7 @@ export default function Home() {
               <h1 className="text-center font-life-savers text-4xl mb-3 text-white font-black md:text-[6rem] md:leading-[90px] md:text-start">
                 Instituto Social Bezerra de Menezes
               </h1>
-              <p className="font-lato text-lg text-center mx-12 md:mx-0 leading-5  md:text-start md:text-3xl md:pr-32 text-[#D8A0A0]">
+              <p className="font-lato text-lg text-center mx-12 md:mx-0 leading-5 tracking-wide md:tracking-normal md:text-start md:text-3xl md:pr-32 text-[#D8A0A0]">
                 Transformando vidas através da, cultura e da arte 🎨💃
               </p>
               <div className="flex gap-x-3 items-center justify-center mt-3 md:justify-start md:mt-6 w-full">

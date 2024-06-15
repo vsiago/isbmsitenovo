@@ -151,3 +151,21 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (max-width: 768px) {
+  .custom-shape-divider-bottom-1718321215 svg {
+    position: relative;
+    display: block;
+    width: calc(190% + 0.3px);
+    height: 95px;
+  }
+
+  .custom-shape-divider-bottom-1718321215 svg ~ svg:nth-of-type(2) {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: calc(580% + 1.3px);
+    height: 200px;
+    opacity: 35%;
+  }
+}
