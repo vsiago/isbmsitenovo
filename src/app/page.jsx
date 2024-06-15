@@ -26,7 +26,7 @@ export default function Home() {
             </div>
 
             <div className=" h-[50%] md:order-1 md:w-[50%] flex flex-col items-start justify-end pb-3">
-              <span className="mx-auto md:mx-0 text-center block text-xs tracking-[3px] mb-2 text-[#f7bfbf] font-bai-jamjuree font-bold md:text-start md:text-xl">
+              <span className="mx-auto md:mx-0 text-center block text-xs tracking-[3px] mb-2 md:mb-5 text-[#f7bfbf] font-bai-jamjuree font-bold md:text-start md:text-xl">
                 BEM-VINDO AO NOSSO
               </span>
               <h1 className="h1 tracking-wider text-center w-full font-life-savers text-4xl md:mb-3 text-white font-black md:text-[5rem] md:leading-[80px] md:text-start">
@@ -35,10 +35,10 @@ export default function Home() {
               <p className="font-lato text-lg w-full text-center leading-5 tracking-wide md:tracking-normal md:text-start md:text-3xl md:pr-32 text-[#f7bfbf]">
                 Transformando vidas através da, <br /> cultura e da arte 🎨💃
               </p>
-              <div className="flex gap-x-3 items-center justify-center mt-3 md:justify-start md:mt-6 w-full">
+              <div className="flex gap-x-3 items-center justify-center mt-3 md:justify-start md:mt-6 w-full mb:mt-6">
                 <a
                   href="/"
-                  className="block text-#E0234E px-5 md:px-6 py-2 md:py-4 bg-[#E0234E] rounded-full text-white font-bold"
+                  className="block text-#E0234E px-5 md:px-12 py-2 md:py-4 bg-[#E0234E] rounded-full text-white font-bold"
                 >
                   APOIAR
                 </a>
