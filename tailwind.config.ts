@@ -68,6 +68,10 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      dropShadow: {
+        blue: "0 10px 8px rgba(59, 130, 246, 0.4)", // Sombra azul personalizada
+        "red-lg": "0 20px 30px rgba(187, 98, 102, 0.4)", // Sombra vermelha grande
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -89,7 +93,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/line-clamp")],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;
 
 export default config;
