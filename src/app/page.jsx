@@ -51,7 +51,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div class="custom-shape-divider-bottom-1718321215">
+          <div class="custom-shape-divider-bottom-1718321215 relative">
             <svg
               data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
@@ -110,6 +110,18 @@ export default function Home() {
                 fill="url(#gradient)"
               ></path>
             </svg>
+          </div>
+          <div className="mb:hidden  -mt-2 absolute left-1/2 transform -translate-x-1/2  -bottom-14 w-full px-3">
+            <p className="w-full mx-auto text-center text-xs md:text-base tracking-widest mb-5">
+              NOSSOS APOIADORES
+            </p>
+            <div className="flex items-center border justify-between w-full gap-x-2">
+              <div className="border border-red-800/30 rounded-lg w-full h-10"></div>
+              <div className="border border-red-800/30 rounded-lg w-full h-10"></div>
+              <div className="border border-red-800/30 rounded-lg w-full h-10"></div>
+              <div className="border border-red-800/30 rounded-lg w-full h-10"></div>
+              <div className="border border-red-800/30 rounded-lg w-full h-10"></div>
+            </div>
           </div>
         </div>
       </section>
