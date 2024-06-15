@@ -29,10 +29,10 @@ export default function Home() {
               <span className="mx-auto md:mx-0 text-center block   text-xs tracking-[4px] mb-3 text-[#ffbecd] font-bai-jamjuree font-bold md:text-start md:text-xl">
                 BEM-VINDO AO NOSSO
               </span>
-              <h1 className="h1 text-center w-full font-life-savers text-4xl md:mb-3 text-white font-black md:text-[6rem] md:leading-[90px] md:text-start">
+              <h1 className="h1 tracking-wider text-center w-full font-life-savers text-4xl md:mb-3 text-white font-black md:text-[6rem] md:leading-[90px] md:text-start">
                 Instituto Social <br /> Bezerra de Menezes
               </h1>
-              <p className="font-lato text-lg text-center leading-5 tracking-wide md:tracking-normal md:text-start md:text-3xl md:pr-32 text-[#D8A0A0]">
+              <p className="font-lato text-lg w-full text-center leading-5 tracking-wide md:tracking-normal md:text-start md:text-3xl md:pr-32 text-[#D8A0A0]">
                 Transformando vidas através da, <br /> cultura e da arte 🎨💃
               </p>
               <div className="flex gap-x-3 items-center justify-center mt-3 md:justify-start md:mt-6 w-full">
