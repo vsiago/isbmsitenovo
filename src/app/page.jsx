@@ -11,10 +11,10 @@ export default function Home() {
     <main className="relative">
       <Header />
 
-      <section className="h-[88vh] -mb-1 relative  flex items-center justify-center bg-gradient-to-tr from-[#311818] via-[#BE2B4E] via-70% to-[#8A0000]/60">
+      <section className="h-[90vh] -mb-1 relative  flex items-center justify-center bg-gradient-to-tr from-[#311818] via-[#BE2B4E] via-70% to-[#8A0000]/60">
         <div className="background-indian-texture  h-full w-full">
           <div className="container flex items-center justify-between flex-col h-full md:flex-row">
-            <div className=" h-[45%] md:h-full w-full md:w-[50%] flex items-end justify-end order-1 md:order-2">
+            <div className=" h-[50%] md:h-full w-full md:w-[50%] flex items-end justify-end order-1 md:order-2">
               <Image
                 width={700}
                 height={700}
@@ -25,14 +25,14 @@ export default function Home() {
               />
             </div>
 
-            <div className=" h-[55%] md:order-1 md:w-[50%] flex flex-col items-start justify-end  pb-3">
-              <span className="mx-auto md:mx-0 text-center block   text-xs tracking-[4px] mb-3 text-[#ffbecd] font-bai-jamjuree font-bold md:text-start md:text-xl">
+            <div className=" h-[50%] md:order-1 md:w-[50%] flex flex-col items-start justify-end  pb-3">
+              <span className="mx-auto md:mx-0 text-center block   text-xs tracking-[3px] mb-2 text-[#f7bfbf] font-bai-jamjuree font-bold md:text-start md:text-xl">
                 BEM-VINDO AO NOSSO
               </span>
               <h1 className="h1 tracking-wider text-center w-full font-life-savers text-4xl md:mb-3 text-white font-black md:text-[6rem] md:leading-[90px] md:text-start">
                 Instituto Social <br /> Bezerra de Menezes
               </h1>
-              <p className="font-lato text-lg w-full text-center leading-5 tracking-wide md:tracking-normal md:text-start md:text-3xl md:pr-32 text-[#D8A0A0]">
+              <p className="font-lato text-lg w-full text-center leading-5 tracking-wide md:tracking-normal md:text-start md:text-3xl md:pr-32 text-[#f7bfbf]">
                 Transformando vidas através da, <br /> cultura e da arte 🎨💃
               </p>
               <div className="flex gap-x-3 items-center justify-center mt-3 md:justify-start md:mt-6 w-full">
