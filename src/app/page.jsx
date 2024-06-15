@@ -141,7 +141,7 @@ export default function Home() {
         <div className="bg-gradient-to-tr from-[#621628] scale-[1.07] opacity-10 z-[19] via-[#BE2B4E] via-70% to-[#8A0000]/60 h-[65%] container  rounded-[5rem] translate-y-5 rotate-2 absolute drop-shadow-2xl"></div>
         <div className="bg-gradient-to-tr from-[#621628] scale-y-[1.10] opacity-10 z-[19] via-[#BE2B4E] via-70% to-[#8A0000]/60 h-[65%] container  rounded-[5rem] -rotate-2 absolute drop-shadow-2xl"></div>
       </section>
-      <section className="-mt-1 h-96 bg-gradient-to-r bg-[#F0E0E0]">
+      <section className=" h-96 bg-gradient-to-r bg-[#F0E0E0]">
         <div className="container mx-auto">
           <h3 className="text-center text-4xl font-life-savers font-bold">
             Nossos Serviços
@@ -154,10 +154,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="h-[40vh] rotate-180 -mb-1 relative  flex items-center justify-center bg-gradient-to-tr from-[#311818] via-[#BE2B4E] via-70% to-[#8A0000]/60">
+      <section className="h-[40vh] rotate-180 -mt-2 relative  flex items-center justify-center bg-gradient-to-tr from-[#311818] via-[#BE2B4E] via-70% to-[#8A0000]/60">
         <div className="background-indian-texture  h-full w-full">
           <div className="container flex items-center justify-between flex-col h-full md:flex-row"></div>
           <div class="custom-shape-divider-bottom-1718321215 relative">
+            <div className="h-2 w-full bg-[#F0E0E0] absolute -top-1 z-[1000]"></div>
             <svg
               data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
