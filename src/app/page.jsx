@@ -111,8 +111,8 @@ export default function Home() {
               ></path>
             </svg>
           </div>
-          <div className="mb:hidden  -mt-2 absolute left-1/2 transform -translate-x-1/2  -bottom-14 w-full px-3 md:px-20">
-            <p className="w-full mx-auto md:container md:text-start md:-translate-y-5  text-center text-xs md:text-base tracking-widest mb-3 md:mb-0">
+          <div className=" absolute left-1/2 transform -translate-x-1/2  -bottom-14 md:-bottom-20 w-full px-3 md:px-20">
+            <p className="w-full mx-auto md:container md:text-start md:-translate-y-9 text-center text-xs md:text-lg tracking-widest mb-3 md:mb-0">
               NOSSOS APOIADORES
             </p>
             <div className="flex items-center border justify-between w-full gap-x-2">
@@ -125,7 +125,22 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="-mt-[2px] h-96 bg-[#F0E0E0]"></section>
+      <section className="-mt-1 h-60 bg-gradient-to-r bg-[#F0E0E0]"></section>
+      <section className="-mt-[2px] h-[115vh] bg-[#F0E0E0] flex items-center justify-center relative -z-20 pb-10">
+        <div className="bg-gradient-to-tr from-[#621628] via-[#BE2B4E] via-70% to-[#8A0000]/60 h-[65%] container  rounded-[5rem] -rotate-1 absolute z-20 drop-shadow-2xl">
+          <h2 className="z-[21] absolute -top-24 left-24 font-life-savers text-5xl text-[#311818]">
+            Quem Somos
+          </h2>
+          <div className="h-full w-full border-2 border-green-500 grid grid-cols-12 grid-rows-2 p-10">
+            <div className="border col-start-1 col-span-5 row-start-1"></div>
+            <div className="border col-start-1 col-span-5 row-start-2"></div>
+            <div className="border col-start-6 col-span-full row-start-1"></div>
+            <div className="border col-start-6 col-span-full row-start-2"></div>
+          </div>
+        </div>
+        <div className="bg-gradient-to-tr from-[#621628] scale-[1.07] opacity-10 z-[19] via-[#BE2B4E] via-70% to-[#8A0000]/60 h-[65%] container  rounded-[5rem] translate-y-5 rotate-2 absolute drop-shadow-2xl"></div>
+        <div className="bg-gradient-to-tr from-[#621628] scale-y-[1.10] opacity-10 z-[19] via-[#BE2B4E] via-70% to-[#8A0000]/60 h-[65%] container  rounded-[5rem] -rotate-2 absolute drop-shadow-2xl"></div>
+      </section>
       <section className="-mt-1 h-96 bg-gradient-to-r bg-[#F0E0E0]"></section>
       <Footer />
     </main>
