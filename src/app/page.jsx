@@ -30,7 +30,7 @@ export default function Home() {
                 BEM-VINDO AO NOSSO
               </span>
               <h1 className="text-center font-life-savers text-4xl mb-3 text-white font-black md:text-[6rem] md:leading-[90px] md:text-start">
-                Instituto Social Bezerra de Menezes
+                Instituto Social <br /> Bezerra de Menezes
               </h1>
               <p className="font-lato text-lg text-center mx-12 md:mx-0 leading-5 tracking-wide md:tracking-normal md:text-start md:text-3xl md:pr-32 text-[#D8A0A0]">
                 Transformando vidas através da, cultura e da arte 🎨💃
