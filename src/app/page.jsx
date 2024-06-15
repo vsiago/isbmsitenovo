@@ -111,16 +111,16 @@ export default function Home() {
               ></path>
             </svg>
           </div>
-          <div className="mb:hidden  -mt-2 absolute left-1/2 transform -translate-x-1/2  -bottom-14 w-full px-3">
-            <p className="w-full mx-auto text-center text-xs md:text-base tracking-widest mb-5">
+          <div className="mb:hidden  -mt-2 absolute left-1/2 transform -translate-x-1/2  -bottom-14 w-full px-3 md:px-20">
+            <p className="w-full mx-auto md:container md:text-start md:-translate-y-5  text-center text-xs md:text-base tracking-widest mb-3 md:mb-0">
               NOSSOS APOIADORES
             </p>
             <div className="flex items-center border justify-between w-full gap-x-2">
-              <div className="border border-red-800/30 rounded-lg w-full h-10"></div>
-              <div className="border border-red-800/30 rounded-lg w-full h-10"></div>
-              <div className="border border-red-800/30 rounded-lg w-full h-10"></div>
-              <div className="border border-red-800/30 rounded-lg w-full h-10"></div>
-              <div className="border border-red-800/30 rounded-lg w-full h-10"></div>
+              <div className="border border-red-800/30 rounded-lg w-full h-10 md:h-20"></div>
+              <div className="border border-red-800/30 rounded-lg w-full h-10 md:h-20"></div>
+              <div className="border border-red-800/30 rounded-lg w-full h-10 md:h-20"></div>
+              <div className="border border-red-800/30 rounded-lg w-full h-10 md:h-20"></div>
+              <div className="border border-red-800/30 rounded-lg w-full h-10 md:h-20"></div>
             </div>
           </div>
         </div>
