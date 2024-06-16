@@ -111,18 +111,7 @@ export default function Home() {
               ></path>
             </svg>
           </div>
-          <div className=" absolute left-1/2 transform -translate-x-1/2  -bottom-14 md:-bottom-20 w-full px-3 md:px-20">
-            <p className="w-full mx-auto md:container md:text-start md:-translate-y-9 text-center text-xs md:text-lg tracking-widest mb-3 md:mb-0">
-              NOSSOS APOIADORES
-            </p>
-            <div className="flex items-center border justify-between w-full gap-x-2">
-              <div className="border border-red-800/30 rounded-lg w-full h-10 md:h-20"></div>
-              <div className="border border-red-800/30 rounded-lg w-full h-10 md:h-20"></div>
-              <div className="border border-red-800/30 rounded-lg w-full h-10 md:h-20"></div>
-              <div className="border border-red-800/30 rounded-lg w-full h-10 md:h-20"></div>
-              <div className="border border-red-800/30 rounded-lg w-full h-10 md:h-20"></div>
-            </div>
-          </div>
+          ;
         </div>
       </section>
       <section className="py-20 md:py-40  bg-gradient-to-r bg-[#F0E0E0]"></section>
@@ -145,13 +134,13 @@ export default function Home() {
               <div className="flex md:block items-center justify-center gap-x-2 mt-6 mb-2">
                 <div className="p-3 px-6 bg-[#69172B]/70 md:w-[70%]  rounded-lg md:mt-6">
                   <p className="text-white text-lg md:text-xl">Localização:</p>
-                  <p className="text-sm md:text-lg text-[#F6B3B3]">
+                  <p className="text-xs md:text-lg text-[#F6B3B3]">
                     Bairro de Bangu e áreas adjacentes
                   </p>
                 </div>
                 <div className="p-3 px-6 bg-[#69172B]/70 md:w-[70%] rounded-lg md:mt-2 md:mb-2">
                   <p className="text-white text-lg md:text-xl">Público:</p>
-                  <p className="text-sm md:text-lg text-[#F6B3B3]">
+                  <p className="text-xs md:text-lg text-[#F6B3B3]">
                     Famílias, Crianças, Jovens, Adultos
                   </p>
                 </div>
