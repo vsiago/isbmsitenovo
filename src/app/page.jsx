@@ -157,7 +157,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-start-1 col-span-4 row-start-2 border-t pb-10 border-t-[#69172B] mt-2 pt-6 order-3 md:block flex flex-col items-center justify-start">
+            <div className="col-start-1 col-span-4 row-start-2 border-t pb-10 md:pb-0 border-t-[#69172B] mt-2 pt-6 order-3 md:block flex flex-col items-center justify-start">
               <div className="flex items-center justify-start gap-x-4 ">
                 <Image
                   src="/icon-mission.png"
@@ -169,7 +169,7 @@ export default function Home() {
                   Nossa Missão
                 </p>
               </div>
-              <p className="text-sm md:text-lg text-[#F6B3B3] w-[90%] text-center mb:text-start">
+              <p className="text-sm md:text-lg text-[#F6B3B3] w-[90%] text-center md:text-start">
                 Oferecer reabilitação especializada, cursos profissionalizantes,
                 esportes e artesanato, promovendo filantropia com ética e
                 responsabilidade social, visando autossustentabilidade e
