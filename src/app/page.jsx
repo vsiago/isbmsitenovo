@@ -33,7 +33,7 @@ export default function Home() {
                 Instituto Social <br /> Bezerra de Menezes
               </h1>
               <p className="font-lato text-lg w-full text-center leading-5 tracking-wide md:tracking-normal md:text-start md:text-3xl md:pr-32 text-[#f7bfbf]">
-                Transformando vidas através da, <br /> cultura e da arte 🎨💃
+                Transformando vidas através da <br /> cultura e da arte 🎨💃
               </p>
               <div className="flex gap-x-3 items-center justify-center mt-3 md:justify-start md:mt-6 w-full mb:mt-6">
                 <a
@@ -127,23 +127,67 @@ export default function Home() {
       </section>
       <section className="-mt-1 h-60 bg-gradient-to-r bg-[#F0E0E0]"></section>
       <section className="-mt-[2px] h-[115vh] bg-[#F0E0E0] flex items-center justify-center relative -z-20 pb-10">
-        <div className="bg-gradient-to-tr from-[#621628] via-[#BE2B4E] via-70% to-[#8A0000]/60 h-[65%] container  rounded-[5rem] -rotate-1 absolute z-20 drop-shadow-2xl">
-          <h2 className="z-[21] absolute -top-24 left-24 font-life-savers text-5xl text-[#311818]">
+        <div className="bg-gradient-to-tr h-[65%] from-[#621628] via-[#BE2B4E] via-70% to-[#8A0000]/60 container  rounded-[5rem] -rotate-1 absolute z-20 drop-shadow-2xl">
+          <h2 className="z-[21] absolute -top-20 font-life-savers text-5xl text-[#68172A] text-center w-full">
             Quem Somos
           </h2>
-          <div className="h-full w-full border-2 border-green-500 grid grid-cols-12 grid-rows-2 p-10">
-            <div className="border col-start-1 col-span-5 row-start-1"></div>
-            <div className="border col-start-1 col-span-5 row-start-2"></div>
-            <div className="border col-start-6 col-span-full row-start-1"></div>
-            <div className="border col-start-6 col-span-full row-start-2"></div>
+          <div className="w-full rotate-1 grid grid-cols-12 grid-rows-2 p-10">
+            <div className="col-start-1 col-span-5 row-start-1 w-full mb-2">
+              <p className="text-white text-2xl pt-10">
+                Instituto Bezerra de Menezes:
+              </p>
+              <p className="text-4xl text-[#FFEBB8] font-semibold mt-2">
+                10 Anos de Atendimento Filantrópico em Bangu
+              </p>
+              <div className="p-3 px-6 bg-[#69172B]/70 w-[70%]  rounded-lg mt-6">
+                <p className="text-white text-xl">Localização:</p>
+                <p className="text-lg text-[#F6B3B3]">
+                  Bairro de Bangu e áreas adjacentes
+                </p>
+              </div>
+              <div className="p-3 px-6 bg-[#69172B]/70 w-[70%] rounded-lg mt-2 mb-3">
+                <p className="text-white text-xl">Público atendido:</p>
+                <p className="text-lg text-[#F6B3B3]">
+                  Famílias, Crianças, Jovens, Adultos
+                </p>
+              </div>
+            </div>
+            <div className="col-start-1 col-span-5 row-start-2 border-t border-t-[#69172B] mt-3 pt-6">
+              <div className="flex items-center justify-start gap-x-4">
+                <Image
+                  src="/icon-mission.png"
+                  width={60}
+                  height={60}
+                  alt="Ícone Missão"
+                />
+                <p className="font-life-savers text-white text-3xl">
+                  Nossa Missão
+                </p>
+              </div>
+              <p className="text-white w-[90%]">
+                Oferecer reabilitação especializada, cursos profissionalizantes,
+                esportes e artesanato, promovendo filantropia com ética e
+                responsabilidade social, visando autossustentabilidade e
+                integração comunitária.
+              </p>
+            </div>
+
+            <div className="col-start-6 col-span-full row-start-1 row-span-2 flex items-center justify-center">
+              <Image
+                src="/foto-isbm.png"
+                width={800}
+                height={500}
+                alt="Foto de pessoas no instituto"
+              />
+            </div>
           </div>
         </div>
-        <div className="bg-gradient-to-tr from-[#621628] scale-[1.07] opacity-10 z-[19] via-[#BE2B4E] via-70% to-[#8A0000]/60 h-[65%] container  rounded-[5rem] translate-y-5 rotate-2 absolute drop-shadow-2xl"></div>
-        <div className="bg-gradient-to-tr from-[#621628] scale-y-[1.10] opacity-10 z-[19] via-[#BE2B4E] via-70% to-[#8A0000]/60 h-[65%] container  rounded-[5rem] -rotate-2 absolute drop-shadow-2xl"></div>
+        <div className="bg-gradient-to-tr from-[#621628] scale-[1.07] opacity-10 z-[19] via-[#BE2B4E] via-70% to-[#8A0000]/60 h-[66%] container  rounded-[5rem] translate-y-5 rotate-2 absolute drop-shadow-2xl"></div>
+        <div className="bg-gradient-to-tr from-[#621628] scale-[1.07] scale-y-[1.10] opacity-10 z-[19] via-[#BE2B4E] via-70% to-[#8A0000]/60 h-[62%] container  rounded-[5rem] -rotate-2 absolute drop-shadow-2xl"></div>
       </section>
       <section className=" h-96 bg-gradient-to-r bg-[#F0E0E0]">
         <div className="container mx-auto">
-          <h3 className="text-center text-4xl font-life-savers font-bold">
+          <h3 className="text-center text-5xl font-life-savers text-[#68172A]">
             Nossos Serviços
           </h3>
           <div className="flex items-center justify-center gap-x-3 mt-3">
