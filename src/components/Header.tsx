@@ -77,7 +77,7 @@ export default function Header() {
         <ul
           className={`${
             open
-              ? "bg-gradient-to-r from-[#140D10]/60 via-[#621628] to-[#621628]/70 flex opacity-100 w-full h-screen left-0 z-[50] backdrop-blur-lg mt-4"
+              ? "bg-gradient-to-r from-[#140D10]/60 via-[#E0234E] to-[#E0234E]/70 flex opacity-100 w-full h-screen left-0 z-[50] backdrop-blur-lg mt-4"
               : "w-full h-0"
           } fixed ${
             scrolled ? "top-16" : "top-20"
