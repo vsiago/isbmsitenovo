@@ -25,7 +25,7 @@ export default function Home() {
               />
             </div>
 
-            <div className=" h-[50%] md:order-1 md:w-[50%] flex flex-col items-start justify-end ">
+            <div className=" h-[50%] md:order-1 md:w-[50%] flex flex-col items-start justify-end">
               <span className="hidden mx-auto md:mx-0 text-center md:block text-xs tracking-[3px] mb-2 md:mb-5 text-[#f7bfbf] font-bai-jamjuree font-bold md:text-start md:text-xl">
                 BEM-VINDO AO NOSSO
               </span>
