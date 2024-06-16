@@ -22,6 +22,9 @@ const config = {
       },
     },
     extend: {
+      GridTemplateRows: {
+        "60-40": "60% 40%",
+      },
       fontFamily: {
         sans: ["Lato", "sans-serif"],
         display: ["Vibur", "sans-serif"],
