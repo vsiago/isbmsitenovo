@@ -196,7 +196,7 @@ export default function Home() {
           <h3 className="text-center text-5xl font-life-savers text-[#68172A]">
             Nossos Serviços
           </h3>
-          <div className="flex items-center justify-center gap-x-6 mt-8">
+          <div className="flex items-center justify-center gap-6 mt-8 flex-wrap">
             <div className="flex flex-col items-center justify-center w-48 h-48 bg-gradient-to-br from-white to-white/50 rounded-xl drop-shadow-red-lg">
               <Image
                 src="/icon-reabilitacao.png"
