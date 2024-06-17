@@ -237,14 +237,75 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className=" rotate-180 -mt-2 relative  flex items-center justify-center bg-gradient-to-tr from-[#311818] via-[#BE2B4E] via-70% to-[#8A0000]/60">
+      <section className=" rotate-180  relative  flex items-center justify-center bg-gradient-to-tr from-[#311818] via-[#BE2B4E] via-70% to-[#8A0000]/60">
         <div className="container rotate-180 pt-10">
-          <div className="flex flex-col md:flex-row items-center justify-center w-full">
-            <div className="border w-full md:w-[50%] h-64"></div>
-            <div className="border w-full md:w-[50%] h-64"></div>
+          <div className="flex flex-col md:flex-row items-end justify-center w-full">
+            <div className=" w-full md:w-[50%] h-72 flex flex-col md:items-start justify-end items-center">
+              <div className="flex items-center gap-x-6">
+                <a href="/">
+                  <Image
+                    src="/logo-isbm.svg"
+                    width={180}
+                    height={20}
+                    alt="Logo ISBM"
+                  />
+                </a>
+                <a
+                  href="/"
+                  className="block mt-3 text-[#E0234E] px-5 md:px-12 py-2 md:py-3 bg-white rounded-full font-bold"
+                >
+                  APOIAR
+                </a>
+              </div>
+              <p className="text-white mt-3">Horário de funcionamento:</p>
+              <p className="text-xs text-[#FFC1D0] text-center">
+                Segunda a quinta-feira: 08:00 - 17:00 Sexta-feira: 08:00 - 16:00
+              </p>
+            </div>
+            <div className=" w-full md:w-[50%]   flex h-32 md:h-44 flex-col items-center justify-end mt-6 -mb-4">
+              <p className="text-white text-bold mb-3">Falar com a ISBM</p>
+              <div className="flex items-center gap-x-1">
+                <a href="/">
+                  <Image
+                    src="/icon-whatsapp.png"
+                    width={80}
+                    height={80}
+                    alt="Ícone WhatsApp"
+                    className="mx-auto mb-1"
+                  />
+                </a>
+                <a href="/">
+                  <Image
+                    src="/icon-email.png"
+                    width={80}
+                    height={80}
+                    alt="Ícone E-mail"
+                    className="mx-auto mb-1"
+                  />
+                </a>
+                <a href="/">
+                  <Image
+                    src="/icon-telefone.png"
+                    width={80}
+                    height={80}
+                    alt="Ícone Telefone"
+                    className="mx-auto mb-1"
+                  />
+                </a>
+                <a href="/">
+                  <Image
+                    src="/icon-enedeco.png"
+                    width={80}
+                    height={80}
+                    alt="Ícone Endereço"
+                    className="mx-auto mb-1"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
           <div className="w-full">
-            <p className="text-white text-xs text-center my-8">
+            <p className="text-white text-xs text-center my-16">
               Copyright © 2024 Instituto Social Bezerra de Menezes Todos os
               direitos reservados.
             </p>

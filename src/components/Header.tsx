@@ -52,12 +52,7 @@ export default function Header() {
     >
       <nav className="min-h-full px-6 flex w-full justify-between items-center md:container mx-auto ">
         <a href="/">
-          <Image
-            src="/logo-isbm.svg"
-            width={150}
-            height={20}
-            alt="Logo Rubao"
-          />
+          <Image src="/logo-isbm.svg" width={150} height={20} alt="Logo ISBM" />
         </a>
         <ul
           onClick={() => setOpen(!open)}
