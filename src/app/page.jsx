@@ -1,10 +1,23 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Header from "../components/Header";
 import { useInView } from "react-intersection-observer";
 
+function scrollToSection(id) {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  }
+}
+
 export default function Home() {
+  // Referência para acessar o ID da seção
+  const quemSomosRef = useRef(null);
 
   const [show1000Delay, setShow1000Delay] = useState(false);
   const [show2000Delay, setShow2000Delay] = useState(false);
@@ -21,7 +34,6 @@ export default function Home() {
     return () => clearTimeout(timer1000, timer2000); // Limpa o temporizador se o componente for desmontado
   }, []); // Executa uma vez após a montagem do componente
 
-  
   // Configuração do Intersection Observer para o h1
   const { ref, inView, entry } = useInView({
     /* Configurações do Intersection Observer */
@@ -51,9 +63,11 @@ export default function Home() {
             </div>
 
             <div className=" h-[50%] md:order-1 md:w-[50%] flex flex-col items-start justify-end">
-              <span className={`hidden mx-auto md:mx-0 text-center md:block text-xs tracking-[3px] mb-2 md:mb-5 text-[#f7bfbf] font-bai-jamjuree font-bold md:text-start md:text-xl ${
-                show2000Delay ? "slide-in-bottom" : "hidden-bottom"
-              }`}>
+              <span
+                className={`hidden mx-auto md:mx-0 text-center md:block text-xs tracking-[3px] mb-2 md:mb-5 text-[#f7bfbf] font-bai-jamjuree font-bold md:text-start md:text-xl ${
+                  show2000Delay ? "slide-in-bottom" : "hidden-bottom"
+                }`}
+              >
                 BEM-VINDO AO NOSSO
               </span>
               <h1
@@ -85,6 +99,10 @@ export default function Home() {
                 <a
                   href="#quem-somos"
                   className="block text-white font-bold px-5 md:px-6 py-2 md:py-4 border-2 border-[#E0234E] rounded-full"
+                  onClick={(e) => {
+                    e.preventDefault(); // Evita o comportamento padrão de scroll imediato
+                    scrollToSection("quem-somos"); // Função para rolar suavemente até a seção
+                  }}
                 >
                   Quem Somos
                 </a>
@@ -154,10 +172,13 @@ export default function Home() {
           ;
         </div>
       </section>
-      <section className="py-20 md:py-40  bg-gradient-to-r bg-[#F0E0E0]"></section>
+      <section
+        id="quem-somos"
+        className="py-20 md:py-40  bg-gradient-to-r bg-[#F0E0E0]"
+      ></section>
       <section className="bg-[#F0E0E0] flex items-center justify-center relative">
-        <div className="bg-gradient-to-tr from-[#621628] via-[#BE2B4E] via-70% to-[#8A0000]/60 container  rounded-[3rem] md:rounded-[5rem] -rotate-1  drop-shadow-2xl z-[3]">
-          <h2 className="z-[21]  absolute md:-top-24 -top-16 left-1/2 transform -translate-x-1/2 font-life-savers text-3xl md:text-7xl text-[#68172A] text-center w-full">
+        <div className="bg-gradient-to-tr from-[#621628] via-[#BE2B4E] via-70% to-[#8A0000]/60 container  rounded-[3rem] md:rounded-[5rem] md:-rotate-1  drop-shadow-2xl z-[3]">
+          <h2 className="absolute z-20 md:-top-24 -top-16 left-1/2 transform -translate-x-1/2 font-life-savers text-3xl md:text-7xl text-[#68172A] text-center w-full">
             Quem Somos
           </h2>
           <div
@@ -291,7 +312,7 @@ export default function Home() {
                   />
                 </a>
                 <a
-                  href="/"
+                  href="/doar"
                   className="block mt-3 text-[#E0234E] px-5 md:px-12 py-2 md:py-3 bg-white rounded-full font-bold"
                 >
                   APOIAR

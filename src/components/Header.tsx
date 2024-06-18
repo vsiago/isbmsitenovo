@@ -21,32 +21,32 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      const isScrolled = currentScrollPos > 0;
-
-      setScrolled(isScrolled);
-
-      if (currentScrollPos > prevScrollPos) {
-        // Scrolling down
-        setPrevScrollPos(currentScrollPos);
-        setOpen(false);
-      } else {
-        // Scrolling up
-        setPrevScrollPos(currentScrollPos);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [prevScrollPos]);
+        const currentScrollPos = window.pageYOffset;
+        const isScrolled = currentScrollPos > 0;
+  
+        setScrolled(isScrolled);
+  
+        if (currentScrollPos > prevScrollPos) {
+          // Scrolling down
+          setPrevScrollPos(currentScrollPos);
+          setOpen(false);
+        } else {
+          // Scrolling up
+          setPrevScrollPos(currentScrollPos);
+        }
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, [prevScrollPos]);
 
   return (
     <header
       className={`${
         scrolled
-          ? "bg-[#E0234E] fixed top-0 z-10 h-16 flex w-full translate-y-0 duration-300 ease-in-out bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-90"
+          ? "z-[2000] bg-gradient-to-r from-[#441f27] from-10% via-[#E0234E] to-[#E0234E] py-10 fixed top-0  h-16 flex w-full translate-y-0 duration-300 ease-in-out bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-90"
           : "py-4 md:py-0 md:h-40 bg-gradient-to-r w-full from-[#140D10]/0 absolute top-0 z-20 left-0 via-[#621628]/0 to-[#621628]/0"
       } `}
     >
