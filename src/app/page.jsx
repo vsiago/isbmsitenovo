@@ -77,13 +77,13 @@ export default function Home() {
                 }`}
               >
                 <a
-                  href="/"
+                  href="/doar"
                   className="block text-#E0234E px-5 md:px-12 py-2 md:py-4 bg-[#E0234E] rounded-full text-white font-bold"
                 >
                   APOIAR
                 </a>
                 <a
-                  href="/"
+                  href="#quem-somos"
                   className="block text-white font-bold px-5 md:px-6 py-2 md:py-4 border-2 border-[#E0234E] rounded-full"
                 >
                   Quem Somos
@@ -169,7 +169,7 @@ export default function Home() {
                 Instituto Bezerra de Menezes:
               </p>
               <p className="text-3xl text-center md:text-start md:text-4xl text-[#FFEBB8] font-semibold mt-2">
-                10 Anos de Atendimento Filantrópico em Bangu
+                8 Anos de Atendimento Filantrópico em Bangu
               </p>
               <div className="flex md:block items-center justify-center gap-x-2 mt-6 mb-2">
                 <div className="p-3 px-6 bg-[#69172B]/70 md:w-[70%]  rounded-lg md:mt-6">
