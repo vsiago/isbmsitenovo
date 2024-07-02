@@ -317,7 +317,7 @@ export default function Home() {
             <li key={index}>
               <a
                 href="#lorem"
-                className="block  p-2 bg-white rounded-lg hover:bg-white/60 "
+                className="block p-2 px-4 bg-white rounded-full hover:bg-white/60 text-[#8B6875]"
               >
                 {curso}
               </a>
