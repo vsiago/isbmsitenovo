@@ -16,6 +16,18 @@ function scrollToSection(id) {
 }
 
 export default function Home() {
+  const cursoOficiais = [
+    "Cabelereiro",
+    "Pintura em Tela",
+    "Teatro Adaptado",
+    "Barbeiro",
+    "Crochê",
+    "Teatro",
+    "Manicure",
+    "Dança de Salão",
+    "JazzBallet",
+  ];
+
   // Referência para acessar o ID da seção
   const quemSomosRef = useRef(null);
 
@@ -297,6 +309,21 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="bg-[#F0E0E0] text-center text-3xl text-pink-950/80 py-20">
+        <h5 className="mb-10">Cursos e Oficinas</h5>
+        <ul className="container mx-auto flex items-start justify-center gap-2 flex-wrap text-base max-w-3xl">
+          {cursoOficiais.map((curso, index) => (
+            <li key={index}>
+              <a
+                href="#lorem"
+                className="block  p-2 bg-white rounded-lg hover:bg-white/60 "
+              >
+                {curso}
+              </a>
+            </li>
+          ))}
+        </ul>
       </section>
       <section className=" rotate-180  relative  flex items-center justify-center bg-gradient-to-tr from-[#311818] via-[#BE2B4E] via-70% to-[#8A0000]/60">
         <div className="container rotate-180 pt-10">
