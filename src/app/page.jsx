@@ -29,6 +29,7 @@ export default function Home() {
   ];
 
   // Referência para acessar o ID da seção
+
   const quemSomosRef = useRef(null);
 
   const [show1000Delay, setShow1000Delay] = useState(false);
@@ -189,12 +190,12 @@ export default function Home() {
         className="py-20 md:py-40  bg-gradient-to-r bg-[#F0E0E0]"
       ></section>
       <section className="bg-[#F0E0E0] flex items-center justify-center relative">
-        <div className="bg-gradient-to-tr from-[#621628] via-[#BE2B4E] via-70% to-[#8A0000]/60 container  rounded-[3rem] md:rounded-[5rem] md:-rotate-1  drop-shadow-2xl z-[3]">
+        <div className="bg-gradient-to-tr from-[#621628] via-[#BE2B4E] via-70% to-[#8A0000]/60 container  rounded-[3rem] md:rounded-[5rem]   drop-shadow-2xl z-[3]">
           <h2 className="absolute z-20 md:-top-24 -top-16 left-1/2 transform -translate-x-1/2 font-life-savers text-3xl md:text-7xl text-[#68172A] text-center w-full">
             Quem Somos
           </h2>
           <div
-            className="w-full rotate-1 flex flex-col md:grid md:grid-cols-12 md:px-8 md:py-10 "
+            className="w-full  flex flex-col md:grid md:grid-cols-12 md:px-8 md:py-10 "
             style={{ gridTemplateRows: "60% 40%" }}
           >
             <div className="col-start-1 col-span-5 row-start-1 w-full mb-2 flex flex-col justify-end order-2">
@@ -310,6 +311,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/********** Cursos e Oficinas **********/}
+
       <section className="bg-[#F0E0E0] text-center text-3xl text-pink-950/80 py-20">
         <h5 className="mb-10">Cursos e Oficinas</h5>
         <ul className="container mx-auto flex items-start justify-center gap-2 flex-wrap text-base max-w-3xl">
@@ -324,6 +328,43 @@ export default function Home() {
             </li>
           ))}
         </ul>
+      </section>
+      {/*********** Colabore com o Nosso Projeto ***********/}
+
+      <section className="bg-[#F0E0E0] text-pink-950/80 py-20 pb-40">
+        <div className="flex items-end container mx-auto flex-wrap md:flex-nowrap text-center md:text-start">
+          <div className="w-full">
+            <div className="flex items-center justify-center md:justify-start">
+              <Image
+                src="/icon-colabore.png"
+                width={130}
+                height={130}
+                alt="Ícone Doação"
+              />
+              <h6 className="text-3xl text-start md:text-4xl font-bold">
+                Colabore com <br /> o Nosso Projeto
+              </h6>
+            </div>
+            <p className="text-[#A46A78] text-2xl md:max-w-[60%] font-semibold pl-5">
+              Uma contribuicao ajuda a construir um mundo mais solidário e
+              justo.
+            </p>
+          </div>
+          <div className="w-full  relative scale-110 md:ml-10 mt-2 flex justify-center items-center">
+            <Image
+              src="/criancas-felizes.png"
+              width={300}
+              height={300}
+              alt="Crianças felizes"
+            />
+            <a
+              href="/doar"
+              className="absolute bottom-3 block bg-red-500 w-[300px] p-3 py-4 text-center text-white font-bold text-xl rounded-full"
+            >
+              Doar ou ser apoiador
+            </a>
+          </div>
+        </div>
       </section>
       <section className=" rotate-180  relative  flex items-center justify-center bg-gradient-to-tr from-[#311818] via-[#BE2B4E] via-70% to-[#8A0000]/60">
         <div className="container rotate-180 pt-10">
