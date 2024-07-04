@@ -332,8 +332,8 @@ export default function Home() {
       {/*********** Colabore com o Nosso Projeto ***********/}
 
       <section className="bg-[#F0E0E0] text-pink-950/80 py-20 pb-40">
-        <div className="flex items-end container mx-auto flex-wrap md:flex-nowrap text-center md:text-start">
-          <div className="w-full">
+        <div className="flex items-end container md:px-52 mx-auto flex-wrap md:flex-nowrap text-center md:text-start">
+          <div className="w-[full]">
             <div className="flex items-center justify-center md:justify-start">
               <Image
                 src="/icon-colabore.png"
@@ -345,7 +345,7 @@ export default function Home() {
                 Colabore com <br /> o Nosso Projeto
               </h6>
             </div>
-            <p className="text-[#A46A78] text-2xl md:max-w-[60%] font-semibold pl-5">
+            <p className="text-[#A46A78] text-2xl md:max-w-[80%] font-semibold pl-5">
               Uma contribuicao ajuda a construir um mundo mais solidário e
               justo.
             </p>
@@ -359,7 +359,7 @@ export default function Home() {
             />
             <a
               href="/doar"
-              className="absolute bottom-3 block bg-red-500 w-[300px] p-3 py-4 text-center text-white font-bold text-xl rounded-full"
+              className="absolute bottom-3 block bg-[#E0234E] bg-gradient-to-br from-[#E0234E] to-[#a52240] w-[300px] p-3 py-4 text-center text-white font-bold text-xl rounded-full hover:scale-110 hover:border-2 hover:border-white hover:drop-shadow-xl hover:shadow-red-950/30 transform ease-linear duration-200"
             >
               Doar ou ser apoiador
             </a>
