@@ -47,9 +47,9 @@ export default function Doar() {
   };
 
   return (
-    <main className="min-h-screen h-full py-10 bg-gradient-to-r from-[#140D10]/60 via-[#621628] to-[#621628]/70 flex flex-col">
-      <Header />
-      <main className="bg-red-50 h-screen py-10 flex-1 text-black pt-20">
+    <main className="min-h-screen h-full  bg-gradient-to-r from-[#140D10]/60 via-[#621628] to-[#621628]/70 flex flex-col">
+      <Header changeHeaderBgColor="true" />
+      <main className="bg-red-50 h-screen  flex-1 text-black pt-20">
         <div className="mt-10 flex flex-col items-center justify-center w-full">
           <Image src="/SVG/icon-donate.svg" alt="icon-donate" width={120} height={120} />
           <p className="text-[#E0234E] text-2xl text-center font-bold uppercase">

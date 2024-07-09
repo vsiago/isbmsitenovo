@@ -3,10 +3,11 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Header() {
+export default function Header({changeHeaderBgColor}) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [apparencyOff, setApparencyOff] = useState(false);
 
   const menuItems = [
     {
@@ -18,6 +19,8 @@ export default function Header() {
       link: "/doar",
     },
   ];
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,7 +50,7 @@ export default function Header() {
       className={`${
         scrolled
           ? "z-[2000] bg-gradient-to-r from-[#441f27] from-10% via-[#E0234E] to-[#E0234E] py-10 fixed top-0  h-16 flex w-full translate-y-0 duration-300 ease-in-out bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-90"
-          : "py-4 md:py-0 md:h-40 bg-gradient-to-r w-full from-[#140D10]/0 absolute top-0 z-20 left-0 via-[#621628]/0 to-[#621628]/0"
+          : `py-4 md:py-0  bg-gradient-to-r  h-20 w-full from-[#140D10]/0 absolute top-0 z-20 left-0 via-[#621628]/0 to-[#621628]/0 ${changeHeaderBgColor || open ? 'bg-[#621628] h-10' : 'bg-[#621628]/0 '}`}
       } `}
     >
       <nav className="min-h-full px-6 flex w-full justify-between items-center md:container mx-auto ">
@@ -75,7 +78,7 @@ export default function Header() {
               ? "bg-gradient-to-r from-[#140D10]/60 via-[#E0234E] to-[#E0234E]/70 flex opacity-100 w-full h-screen left-0 z-[50] backdrop-blur-lg mt-4"
               : "w-full h-0"
           } fixed ${
-            scrolled ? "top-16" : "top-20"
+            scrolled ? "top-16" : "top-16"
           } right-0 flex flex-col transition duration-200 ease-out opacity-0 flex-1`}
         >
           {menuItems.map((item, index) => (
