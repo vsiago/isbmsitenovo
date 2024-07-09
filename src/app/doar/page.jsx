@@ -63,7 +63,7 @@ export default function Doar() {
               <React.Fragment key={index}>
                 <li
                   onClick={() => toggleItemActive(index)}
-                  className=" h-20 bg-green-500 text-white flex justify-between items-center rounded-t-md px-8 py-4 mt-3"
+                  className=" h-20 bg-red-500 text-white flex justify-between items-center rounded-t-md px-8 py-4 mt-3"
                 >
                   <div className="bg-red-500 pointer-events-none gap-3 w-full h-full rounded-md flex items-center justify-center">
                     <p className="font-bold  text-xl">{donate.amount}</p>
@@ -95,11 +95,11 @@ export default function Doar() {
                       Chave pix: CNPJ
                     </p>
                     <div
-                      className={`bg-green-500 border-2 border-white p-3 px-7 rounded-full drop-shadow-xl shadow-2xl ${copiedIndex === index ? 'bg-green-500' : ''}`}
+                      className={`bg-[#69313F] border-2 border-white p-3 px-7 rounded-full drop-shadow-xl shadow-2xl ${copiedIndex === index ? 'bg-green-500' : ''}`}
                       onClick={() => copyToClipboard(donate.pixKey, index)}
                       style={{ cursor: "pointer" }}
                     >
-                      <p className={`text-[#E0234E] font-bold text-xl tracking-wide text-center ${copiedIndex === index ? 'text-white' : ''}`}>
+                      <p className={`text-[#ff93b7] font-bold text-xl tracking-wide text-center ${copiedIndex === index ? 'text-green-500' : ''}`}>
                         {copiedIndex === index ? "Chave copiada!" : donate.pixKey}
                       </p>
                     </div>
