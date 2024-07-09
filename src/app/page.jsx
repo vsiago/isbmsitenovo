@@ -333,15 +333,16 @@ export default function Home() {
 
       <section className="bg-[#F0E0E0] text-pink-950/80 py-20 pb-40">
         <div className="flex items-end container md:px-52 mx-auto flex-wrap md:flex-nowrap text-center md:text-start">
-          <div className="w-[full]">
+          <div className="w-full">
             <div className="flex items-center justify-center md:justify-start">
               <Image
                 src="/icon-colabore.png"
                 width={130}
                 height={130}
                 alt="Ícone Doação"
+                className="border"
               />
-              <h6 className="text-3xl text-start md:text-4xl font-bold">
+              <h6 className="text-2xl sm:text-3xl text-start md:text-4xl font-bold">
                 Colabore com <br /> o Nosso Projeto
               </h6>
             </div>
