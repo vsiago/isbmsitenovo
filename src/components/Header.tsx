@@ -3,7 +3,11 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Header({changeHeaderBgColor}) {
+interface HeaderProps {
+  changeHeaderBgColor: string;
+}
+
+export default function Header({changeHeaderBgColor}: HeaderProps) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
