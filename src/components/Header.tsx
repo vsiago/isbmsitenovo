@@ -24,8 +24,6 @@ export default function Header({changeHeaderBgColor}: HeaderProps) {
     },
   ];
 
-
-
   useEffect(() => {
     const handleScroll = () => {
         const currentScrollPos = window.pageYOffset;
