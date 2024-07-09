@@ -251,8 +251,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-gradient-to-tr from-[#621628] scale-[1.07] opacity-10 z-[1] via-[#BE2B4E] via-70% to-[#8A0000]/60 h-[66%] container  rounded-[5rem] translate-y-5 rotate-2 absolute drop-shadow-2xl"></div>
-        <div className="bg-gradient-to-tr from-[#621628] scale-[1.07] scale-y-[1.10] opacity-10 z-[2] via-[#BE2B4E] via-70% to-[#8A0000]/60 h-[62%] container  rounded-[5rem] -rotate-2 absolute drop-shadow-2xl"></div>
+        <div className="hidden md:block bg-gradient-to-tr from-[#621628] scale-[1.07] opacity-10 z-[1] via-[#BE2B4E] via-70% to-[#8A0000]/50 h-[95%] container  rounded-[5rem] translate-y-5 rotate-2 absolute drop-shadow-2xl"></div>
+        <div className="hidden md:block bg-gradient-to-tr from-[#621628] scale-[1.07] scale-y-[1.10] opacity-10 z-[2] via-[#BE2B4E] via-70% to-[#8A0000]/30 h-[90%] container  rounded-[5rem] -rotate-2 absolute drop-shadow-2xl"></div>
       </section>
       <section className="bg-gradient-to-r bg-[#F0E0E0] py-20">
         <div className="container mx-auto">
