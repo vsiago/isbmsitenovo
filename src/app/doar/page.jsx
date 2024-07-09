@@ -95,11 +95,11 @@ export default function Doar() {
                       Chave pix: CNPJ
                     </p>
                     <div
-                      className={`bg-[#69313F] border-2 border-white p-3 px-7 rounded-full drop-shadow-xl shadow-2xl ${copiedIndex === index ? 'bg-green-500' : ''}`}
+                      className={` border-2 border-white p-3 px-7 rounded-full drop-shadow-xl shadow-2xl ${copiedIndex === index ? 'bg-green-500' : 'bg-[#69313F]'}`}
                       onClick={() => copyToClipboard(donate.pixKey, index)}
                       style={{ cursor: "pointer" }}
                     >
-                      <p className={`text-[#ff93b7] font-bold text-xl tracking-wide text-center ${copiedIndex === index ? 'text-green-500' : ''}`}>
+                      <p className={`font-bold text-xl tracking-wide text-center ${copiedIndex === index ? 'text-green-950' : 'text-[#ff93b7] '}`}>
                         {copiedIndex === index ? "Chave copiada!" : donate.pixKey}
                       </p>
                     </div>
