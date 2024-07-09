@@ -34,8 +34,8 @@ export default function Doar() {
   const [copiedIndex, setCopiedIndex] = useState(null);
 
   const toggleItemActive = (index) => {
-    const newActiveState = [...itemActive];
-    newActiveState[index] = !newActiveState[index];
+    const newActiveState = Array(donates.length).fill(false);
+    newActiveState[index] = !itemActive[index];
     setItemActive(newActiveState);
   };
 
